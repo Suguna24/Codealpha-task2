@@ -1,0 +1,1 @@
+The Gym Tracker App is a simple web-based application that helps users track their daily workouts and exercises. Users can add exercises, record sets and repetitions, and monitor their fitness progress.
