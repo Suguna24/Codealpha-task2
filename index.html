@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness Tracker App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="app">
+    <h1>Fitness Tracker</h1>
+
+    <div class="dashboard">
+        <div class="card">
+            <h3>Steps</h3>
+            <p id="stepsTotal">0</p>
+        </div>
+        <div class="card">
+            <h3>Calories</h3>
+            <p id="caloriesTotal">0</p>
+        </div>
+    </div>
+
+    <div class="form">
+        <input type="number" id="steps" placeholder="Steps">
+        <input type="number" id="calories" placeholder="Calories">
+        <button onclick="addData()">Add</button>
+    </div>
+
+    <canvas id="chart"></canvas>
+</div>
+
+<script src="script.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+</body>
+</html>

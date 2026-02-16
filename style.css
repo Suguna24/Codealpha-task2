@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif, sans-serif;
+     background-image: url("bg.jpg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app {
+    max-width: 420px;
+    
+    padding: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 7px solid #469a40;
+}
+
+h1 {
+    text-align: center;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card {
+    width: 40%;
+    background: #cd9acb;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form input {
+    width: 100%;
+    padding: 7px 1px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #e29ecd;
+    color: rgb(15, 23, 20);
+    border: rgba(10, 223, 198, 0.683);
+    border-radius: 8px;
+}
